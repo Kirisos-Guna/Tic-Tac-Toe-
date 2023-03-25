@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <style>
+      .board {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+      }
+
+      .cell {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 48px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .cell.x {
+        color: red;
+      }
+
+      .cell.o {
+        color: blue;
+      }
+
+      .message {
+        font-size: 24px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="board"></div>
+    <div class="message"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
